@@ -3,7 +3,7 @@
 We can simply use Postman to utilize the desired method, and invoke the endpoint accordingly.
 The following examples just contain sample invocations with expected body and response.
  
-Creating a new employee:
+## Creating a new employee:
 POST 
 https://szfgvcv9f0.execute-api.us-east-1.amazonaws.com/production/employee
 Body-
@@ -14,7 +14,7 @@ Body-
     "Salary":125000
 }
 
-Fetching a particular employee:
+## Fetching a particular employee:
 GET 
 https://szfgvcv9f0.execute-api.us-east-1.amazonaws.com/production/employee?employeeid=103
 
@@ -26,11 +26,7 @@ Sample output-
     "full_name": "Jennifer Rose"
 }
 
-
-
-
-
-Fetching list of all employees:
+## Fetching list of all employees:
 GET 
 https://szfgvcv9f0.execute-api.us-east-1.amazonaws.com/production/employees
 <Sample Output>{
@@ -46,22 +42,11 @@ https://szfgvcv9f0.execute-api.us-east-1.amazonaws.com/production/employees
             "Salary": 100000,
             "employeeid": "102",
             "full_name": "Adam Linus"
-        },
-        {
-            "job_title": "SDE",
-            "Salary": 50000,
-            "employeeid": "104",
-            "full_name": "Yin Wang"
-        },
-        {
-            "job_title": "CEO",
-            "Salary": 125000,
-            "employeeid": "101",
-            "full_name": "John Fernandes"
         }
     ]
 }
-Updating a particular employee:
+
+## Updating a particular employee:
 PATCH
 https://szfgvcv9f0.execute-api.us-east-1.amazonaws.com/production/employee
 
@@ -72,7 +57,7 @@ Body-
     "updateValue":"90000"
 }
 
-Deleting a particular employee:
+## Deleting a particular employee:
 DELETE
 https://szfgvcv9f0.execute-api.us-east-1.amazonaws.com/production/employee
 
